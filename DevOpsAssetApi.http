@@ -1,0 +1,6 @@
+@DevOpsAssetApi_HostAddress = http://localhost:5023
+
+GET {{DevOpsAssetApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
