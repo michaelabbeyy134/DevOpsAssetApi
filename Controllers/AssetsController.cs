@@ -16,6 +16,17 @@ namespace DevOpsAssetApi.Controllers
             _context = context;
         }
 
+
+        [HttpGet("/health")]
+        public IActionResult Health()
+        {
+            return Ok("Healthy");
+        }
+
+
+
+
+
         // GET: api/assets
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Asset>>> GetAssets()
